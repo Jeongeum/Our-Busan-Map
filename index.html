@@ -5,60 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <title>부산여행 지도</title>
 </head>
 
 <body>
-    <img src="" alt="로고">
+
     <article id="app">
-        <h1></h1>
-        <section class="laptop">
+        <!-- 로고 위치 설정을 위한 임시 마크업 -->
+        <h1 class="logo-app">
+            <img src="./Logo.svg" alt="로고">
+        </h1>
+        <section class="laptop-cont">
             <h2 class="ir">랩탑 화면</h2>
-            <section class="랩탑잠금화면">
+            <section class="laptop-lock">
                 <h3 class="ir">랩탑잠금화면</h3>
                 <p class="date">11월 11일 금요일</p>
                 <time>00:00</time>
             </section>
-            <section class="랩탑메인화면">
-                <h3 class="ir">랩탑메인화면</h3>
+            <section class="laptop-unlock">
+                <h3 class="ir">랩탑여행계획화면</h3>
                 <div class="plan-cont">
-                    <ol class="day1">
+                    <ul class="day1">
                         1일차
                         <li>추억보물섬</li>
                         <li>부평 깡통시장</li>
                         <li>호텔 체크인</li>
                         <li>바다</li>
                         <li>저녁 - 황소해물탕</li>
-                    </ol>
-                    <ol class="day2">
+                    </ul>
+                    <ul class="day2">
                         2일차
                         <li>아침 겸 점심 - 수변최고돼지국밥</li>
                         <li>카페 - 녹아내려</li>
                         <li>00</li>
                         <li>저녁 - </li>
-                    </ol>
+                    </ul>
                 </div>
             </section>
         </section>
-        <section class="desktop">
-            <h2>데스크탑 화면</h2>
-            <section class="데스크탑시작화면">
-                <div class="view">
-                    <h3>소영이와 정음이의 <br> 부산여행</h3>
-                    <button type="button" class="startBtn">Click!</button>
-                </div>
+        <section class="desktop-cont">
+            <h2 class="ir">데스크탑 화면</h2>
+            <section class="desktop-lock">
+                <h3>소영이와 정음이의 <br> 부산여행</h3>
+                <button type="button" class="startBtn">Click!</button>
             </section>
 
-            <section class="데스크탑메인화면">
+            <section class="desktop-unlock">
 
                 <div class="topBar">
                     <!-- 동그래미 3개 -->
                 </div>
                 <h3>소영이와 정음이의 부산여행 지도</h3>
                 <div id="map">
-
+                    <!-- 지도 -->
                 </div>
             </section>
 
