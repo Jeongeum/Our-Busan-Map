@@ -1,3 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Jua', sans-serif;
+    font-size: 16px;
+    vertical-align: baseline;
+    list-style: none;
+}
+
 .ir{
 	position: absolute;
     clip-path: inset(0 0 0 0);
@@ -12,87 +22,103 @@
 }
 
 body {
-    width: 1920px;
-    height: 980px;
+    
 }
 
 #app {
+    width: 1714px;
+    height: 986px;
     display: flex;
-    align-items: flex-end;
-    margin: 50px 105px;
+    margin: 30px 105px;
+    position: relative;
 }
 
-#app .laptop {
-    width : 900px;
-    height: 100vh;
-    background-color: antiquewhite;
+#app .logo-app {
+    display: inline-block;
+    position: absolute;
+    width: 250px;
 }
 
-#app .desktop {
+#app .logo-app img {
+    width: 100%;
+}
+
+#app .laptop-cont {
+    width : 745px;
+}
+
+#app .desktop-cont {
     width: 1020px;
-    height: 100vh;
     float: left;
-    background-color: lightblue;
 }
 
 /* 랩탑 */
-.랩탑잠금화면 {
-    width: 531px;
-    height: 335px;
-    text-align: center;
-    background-color: coral;
+
+/* 랩탑 section 공통스타일 */
+.laptop-cont section {
+    width: 561px;
+    height: 347px;
+    position: absolute;
+    bottom: 76px;
+    left: 23px;
 }
 
-.laptop .랩탑잠금화면 .date {
+.laptop-lock {
+    z-index: 1;
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+}
+
+.laptop-cont .laptop-lock .date {
     padding-top: 50px;
 }
 
-.laptop .랩탑메인화면 {
-    width: 531px;
-    height: 335px;
+.laptop-cont .laptop-lock time {
+    font-size: 60px;
+}
+
+.laptop-cont .laptop-unlock {
     background-color: lightgreen;
 }
 
-.laptop .랩탑메인화면 .plan-cont {
+.laptop-cont .laptop-unlock .plan-cont {
    display: flex;
    justify-content: center;
    align-items: center;
 }
 
-.laptop .랩탑메인화면 .day1 {
+.laptop-cont .laptop-unlock .day1 {
     float: left;
 }
 
 /* 데스크탑 */
 
-.데스크탑시작화면 {
+/* 데탑 section 공통스타일 */
+.desktop-cont section {
     width: 990px;
     height: 558px;
-    background-color: coral;
+    position: absolute;
+    top: 135px;
+    right: 28px;
 }
 
-.데스크탑시작화면 .view {
+.desktop-lock {
     text-align: center;
+    z-index: 1;
+    background-color: #111;
+    color: #fff;
 }
 
-/* 테스트를 위해 임시 지정 */
-.데스크탑시작화면 img {
-    align-items: center;
-    width: 320px;
-    height: 320px;
-}
 
-.desktop .데스크탑메인화면 {
-    margin-top: 10px;
-    width: 990px;
-    height: 558px;
+.desktop-cont .desktop-unlock {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: lightgreen;
 }
 
-.desktop .데스크탑메인화면 .topBar {
+.desktop-cont .desktop-unlock .topBar {
     width: 100%;
     height: 30px;
     background-color: #333;
