@@ -115,28 +115,37 @@ body {
     font-size: 60px;
 }
 
-.laptop-cont .laptop-unlock {
-    background-color: lightgreen;
+.laptop-unlock .plan-tit {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
     margin-left: 9px;
     margin-bottom: 16px;
 }
 
-.laptop-cont .laptop-unlock .plan-cont {
-    display: flex;
-}
-
-.laptop-cont .laptop-unlock ul {
+.laptop-unlock ul {
     font-size: 45px;
     position: absolute;
+    width: 230px;
+    padding: 10px;
+}
+
+.laptop-unlock ul li {
+    font-weight:lighter;
+}
+
+.laptop-unlock .sticky-day1 {
     top: 25%;
+    left: 5%;
+    background-color: #fef59c;
+    border-top: 10px solid #faeb68;
 }
 
-.laptop-cont .laptop-unlock .day1 {
-    left: 20%;
-}
-
-.laptop-cont .laptop-unlock .day2 {
-    left: 50%;
+.laptop-unlock .sticky-day2 {
+    top: 35%;
+    right: 6%;
+    background-color: #ffc7c7;
+    border-top: 10px solid #f3b7b4;
 }
 
 /* 데스크탑 */
