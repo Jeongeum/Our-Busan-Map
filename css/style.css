@@ -22,7 +22,7 @@
 }
 
 body {
-    
+    background: url(../images/off-background.png) no-repeat;
 }
 
 #app {
@@ -69,6 +69,14 @@ body {
     text-align: center;
     background-color: #111;
     color: #fff;
+    margin-left: 9px;
+    margin-bottom: 14px;
+}
+
+.img-char {
+    position: absolute;
+    top: 303px;
+    left: 20px;
 }
 
 /* 탑바 공통 스타일 */
@@ -109,6 +117,8 @@ body {
 
 .laptop-cont .laptop-unlock {
     background-color: lightgreen;
+    margin-left: 9px;
+    margin-bottom: 16px;
 }
 
 .laptop-cont .laptop-unlock .plan-cont {
@@ -136,7 +146,7 @@ body {
     width: 990px;
     height: 558px;
     position: absolute;
-    top: 135px;
+    top: 133px;
     right: 28px;
     border-radius: 10px;
 }
@@ -146,6 +156,8 @@ body {
     z-index: 1;
     background-color: #111;
     color: #fff;
+    margin-right: 16px;
+
 }
 
 
@@ -154,6 +166,7 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: lightgreen;
+    margin-right: 16px;
 }
 
 #map {
