@@ -61,6 +61,7 @@ body {
     position: absolute;
     bottom: 76px;
     left: 23px;
+    border-radius: 10px;
 }
 
 .laptop-lock {
@@ -68,6 +69,34 @@ body {
     text-align: center;
     background-color: #111;
     color: #fff;
+}
+
+/* 탑바 공통 스타일 */
+.laptop-unlock .topBar,
+.desktop-unlock .topBar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: #323233;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.topBar .topBar-item {
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: #ff5f57;
+    border-radius: 50%;
+}
+
+.topBar .topBar-item:nth-child(2) {
+    background-color: #febc39;
+}
+
+.topBar .topBar-item:last-child {
+    background-color: #29c840;
 }
 
 .laptop-cont .laptop-lock .date {
@@ -83,13 +112,21 @@ body {
 }
 
 .laptop-cont .laptop-unlock .plan-cont {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+}
+
+.laptop-cont .laptop-unlock ul {
+    font-size: 45px;
+    position: absolute;
+    top: 25%;
 }
 
 .laptop-cont .laptop-unlock .day1 {
-    float: left;
+    left: 20%;
+}
+
+.laptop-cont .laptop-unlock .day2 {
+    left: 50%;
 }
 
 /* 데스크탑 */
@@ -101,6 +138,7 @@ body {
     position: absolute;
     top: 135px;
     right: 28px;
+    border-radius: 10px;
 }
 
 .desktop-lock {
@@ -116,12 +154,6 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: lightgreen;
-}
-
-.desktop-cont .desktop-unlock .topBar {
-    width: 100%;
-    height: 30px;
-    background-color: #333;
 }
 
 #map {
