@@ -15,8 +15,16 @@ startBtn.addEventListener("click", () => {
 // 잠금화면 시간 표시
 const time = lapStartCont.querySelector("time");
 
-let date = new Date();
-let hours = date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
-let min = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
+function getTime() {
+  let date = new Date();
+  let hours = date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
+  let min = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
 
-time.innerText = `${hours}:${min}`;
+  time.innerText = `${hours}:${min}`;
+}
+
+function init() {
+  setInterval(getTime, 1000);
+}
+
+init();
